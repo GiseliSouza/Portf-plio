@@ -93,7 +93,7 @@ body{
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color:var(--cor-secundaria);
+    color:var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
 }
 
@@ -132,4 +132,8 @@ body{
     .apresentacao__conteudo {
         width: auto;
     }
+}
+
+.space {
+    max-width: 100%;
 }

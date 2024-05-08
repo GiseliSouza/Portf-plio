@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat' , sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2%  0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none; 
+}
+
+.apresentacao {
+    padding: 5% 15% 0% ; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    
+    font-size: 250%;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+} 
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding:10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+
+.space {
+    max-width: 100%;
+}
+
+.apresentacao__conteudo input {
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+}
+
+.apresentacao__conteudo button {
+    cursor: pointer;
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__campo{
+    font-family: var(--fonte-secundaria);
+    padding: 5% 5%; 
+    display: flex;
+    gap: 20px;
+    font-size: 10px;
+}
+
+
+
